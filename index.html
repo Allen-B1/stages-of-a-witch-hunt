@@ -168,7 +168,7 @@ Artist's Note: This is an exploration of the parallels between cancel culture,
                     let target = elem.offsetTop - 128;
                     id = setInterval(function() {
                         document.scrollingElement.scrollTop -= (document.scrollingElement.scrollTop - target) / 25;
-                        if (Math.abs(document.scrollingElement.scrollTop - target) < 15) {
+                        if (Math.abs(document.scrollingElement.scrollTop - target) < 50) {
                             clearInterval(id);
                         }
                     }, 10);
